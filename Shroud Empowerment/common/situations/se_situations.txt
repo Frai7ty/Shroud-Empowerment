@@ -1,0 +1,109 @@
+se_situation_the_ascent = {
+	picture = GFX_evt_shroudwalker_enclave
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_unknown
+
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 24
+			custom_tooltip = se_stage_1_effects
+			on_first_enter = {
+				
+			}
+		}
+
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 84
+			custom_tooltip = se_stage_2_effects
+			on_first_enter = {
+				situation_event = { id = se.2000 }
+			}
+		}
+
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 168
+			custom_tooltip = se_stage_3_effects
+			on_first_enter = {
+				situation_event = { id = se.2000 }
+			}
+		}
+
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 256
+			custom_tooltip = se_stage_4_effects
+			on_first_enter = {
+				situation_event = { id = se.2000 }
+			}
+		}
+
+		stage_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 336
+			custom_tooltip = se_stage_5_effects
+			on_first_enter = {
+				situation_event = { id = se.2000 }
+			}
+		}
+
+		stage_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+			end = 420
+			custom_tooltip = se_stage_6_effects
+			on_first_enter = {
+				situation_event = { id = se.2000 }
+			}
+		}
+
+		stage_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+			end = 504
+			custom_tooltip = se_stage_7_effects
+			on_first_enter = {
+				situation_event = { id = se.2010 } 
+			}
+		}
+
+		stage_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_blue
+			end = 600
+			custom_tooltip = se_stage_8_effects
+			on_first_enter = {
+				situation_event = { id = se.2011 } 
+			}
+		}
+	}
+
+	on_progress_complete = {
+		destroy_situation = this
+		situation_event = {
+			id = se.2012
+		}
+	}
+
+	monthly_progress = {
+		base = 1
+	}
+
+	approach = {
+		name = sutuation_se_regular
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			custom_tooltip = approach_se_regular_tt
+		}
+	}
+
+}

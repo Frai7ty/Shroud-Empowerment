@@ -1,0 +1,212 @@
+namespace = se
+
+country_event = {
+	id = se.1000
+	title = "se.1000.name"
+	desc = "se.1000.desc"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	option = {
+		name = se.1000.a
+		custom_tooltip = se.1000.a.tt
+		hidden_effect = { save_event_target_as = se_shroud_owner }
+		capital_scope = {
+			enable_special_project = {
+				name = "SHROUD_EMPOWERMENT_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+	}
+}
+
+country_event = {
+	id = se.1100 
+	title = "TEST"
+	desc = "TEST"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "TEST"
+		owner = {
+			start_situation = { 
+				type = se_situation_the_ascent
+				target = owner
+			}
+		}
+	}
+}
+
+
+situation_event = {
+	id = se.2000
+	title = "se.2000.name"
+	desc = "se.2000.desc"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	option = {
+		name = "se.2000.a"
+	}
+
+	after = {
+		owner = {
+			country_event = {
+				id = se.2100
+			}		
+		}
+	}
+}
+
+# Passthrough event's to run from situation to contry scope
+situation_event = {
+	id = se.2010
+	hide_window = yes
+	is_triggered_only = yes
+	after = {
+		owner = {
+			country_event = {
+				id = utopia.3190
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = se.2011
+	hide_window = yes
+	is_triggered_only = yes
+	after = {
+		owner = {
+			country_event = {
+				id = se.2110
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = se.2012
+	hide_window = yes
+	is_triggered_only = yes
+	after = {
+		owner = {
+			country_event = {
+				id = se.2120
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = se.2100 
+	title = "TEST"
+	desc = "TEST"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "se.2100.a"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = se_has_precog
+				}
+			}
+		}
+		add_research_option = tech_precognition_interface
+		set_country_flag = se_has_precog
+	}
+
+	option = {
+		name = "se.2100.b"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = se_has_psi_jump
+				}
+			}
+		}
+		add_research_option = tech_psi_jump_drive_1
+		set_country_flag = se_has_psi_jump
+	}
+
+	option = {
+		name = "se.2100.c"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag =  se_has_psi_shield
+				}
+			}
+		}
+		add_research_option = tech_psionic_shield
+		set_country_flag = se_has_psi_shield
+	}
+
+	option = {
+		name = "se.2100.d"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = se_has_psi_barrier
+				}
+			}
+		}
+		add_research_option = tech_psionic_barrier
+		set_country_flag = se_has_psi_barrier
+	}
+
+	option = {
+		name = "se.2100.e"
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = se_has_buffed_telepaths
+				}
+			}
+		}
+		set_country_flag = se_has_buffed_telepaths
+	}
+}
+
+country_event = {
+	id = se.2110 
+	title = "TEST"
+	desc = "TEST"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	option = {
+		name = "se.2110.a"
+		set_country_flag = se_can_spawn_avatar
+	}
+}
+
+country_event = {
+	id = se.2120 
+	title = "TEST"
+	desc = "TEST"
+	picture = GFX_evt_shroudwalker_enclave
+	show_sound = event_psionic
+
+	is_triggered_only = yes
+
+	option = {
+		name = "se.2120.a"
+		set_country_flag = se_ascended
+	}
+}

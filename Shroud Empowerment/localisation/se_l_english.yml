@@ -1,0 +1,52 @@
+﻿l_english:
+ 
+# Special Projects
+SHROUD_EMPOWERMENT_PROJECT: "Shroud Empowerment"
+
+# Events
+se.1000.name: "The Ascent"
+se.1000.desc: "Still probing for a way past the veil, our Conclave keeps finding themselves confronted with the same obstacle. A Mountain, the peak of which extends well past the clouds above. All paths lead here it seems, and without a patron to guide us, we must face the Mountain alone."
+se.1000.a: "Then we will face the Mountain."
+se.1000.a.tt: "§GThis will let us form our own Patron.§!"
+
+# Situation Passthrough Event
+se.2000.name: "Meditations"
+se.2000.desc: "For a moment, the fog in the shroud parts. the clarity of understanding washes over us. Colectively our minds touch all of exisistance "
+se.2000.a: "Strength via Unity"
+
+# Buff Selection
+se.2100.a: "Precognition Interface"
+se.2100.b: "Psionic Jump Drive"
+se.2100.c: "Psionic Shields"
+se.2100.d: "Psionic Barrier"
+se.2100.e: "Buff Telepaths"
+
+se.2110.a: "se.2110.a - REPLACE ME"
+se.summon.avatar: "Summon Avatar"
+
+se.2120.a: "se.2120.a - REPLACE ME"
+
+# Situations
+se_situation_the_ascent: "The Ascent"
+se_situation_the_ascent_desc: "This mountian is sure to hold many dagers, but also many gifts."
+
+se_situation_the_ascent_type: "se_situation_the_ascent_type - REPLACE ME"
+se_situation_the_ascent_monthly_change_tooltip: "se_situation_the_ascent_monthly_change_tooltip - REPLACE ME"
+
+sutuation_se_regular: "Ascend with caution."
+approach_se_regular_tt: "A slow and steady pace is ideal."
+
+se_stage_1_effects: "The Journey begins."
+se_stage_2_effects: "Our Power Grows"
+se_stage_3_effects: "Our Power Grows"
+se_stage_4_effects: "Our Power Grows"
+se_stage_5_effects: "Our Power Grows"
+se_stage_6_effects: "Our Power Grows"
+se_stage_7_effects: "Chosen One"
+se_stage_8_effects: "Recruit Avatar Ship"
+
+# Buildings
+se_building_psionic_sanctum: "Psionic Sanctum"
+se_building_psionic_sanctum_desc: "This sanctum is a sacred beacon. While in the shroud, all of our Telepaths can find their way back to here."
+
+TEST: "REPLACE ME"

@@ -1,0 +1,29 @@
+special_project = {
+	key = "SHROUD_EMPOWERMENT_PROJECT"
+	cost = {
+		base = 500
+		scaled_modifier = {
+			limit = { }
+			scope = this
+			add = 50
+			calc = pop_count
+		}
+	}
+	tech_department = society_technology
+	picture = GFX_evt_psionics
+	location = no
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	timelimit = -1
+
+	event_scope = planet_event
+
+	requirements = {
+	}
+
+	on_success = {
+		event_target:se_shroud_owner = {
+			country_event = { id = se.1100 }
+			set_country_flag = breached_shroud
+		}
+	}
+}
