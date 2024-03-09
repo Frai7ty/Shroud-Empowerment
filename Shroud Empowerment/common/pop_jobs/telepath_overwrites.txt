@@ -264,6 +264,17 @@ telepath = {
 		}
 		pop_housing_usage_mult = -0.05
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				has_country_flag = se_has_buffed_telepaths
+				is_authoritarian = yes 
+			}
+		}
+		planet_stability_add = 5
+	}
 
 	triggered_country_modifier = {
 		potential = {
@@ -276,16 +287,7 @@ telepath = {
 		country_naval_cap_add = 5
 	}
 
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				has_country_flag = se_has_buffed_telepaths
-				is_authoritarian = yes 
-			}
-		}
-		country_edict_fund_add = 5
-	}
+
 
 	weight = {
 		weight = @specialist_job_weight

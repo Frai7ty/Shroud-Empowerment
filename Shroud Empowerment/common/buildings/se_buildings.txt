@@ -28,7 +28,7 @@ se_building_psionic_sanctum = {
 	}
 
 	planet_modifier = {
-		job_telepath_add = 6
+		job_telepath_add = 4
 	}
 
 	triggered_desc = {
