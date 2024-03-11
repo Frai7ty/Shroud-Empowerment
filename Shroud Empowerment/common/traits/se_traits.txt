@@ -1,0 +1,20 @@
+se_leader_trait_patron = {
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = "GFX_leader_trait_foreign_consciousness"
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	councilor_modifier = {
+		planet_psionic_jobs_produces_mult = 0.10
+	}
+
+	leader_class = { official commander scientist }
+
+	initial = no
+	randomized = no
+	immortal_leaders = yes
+}

@@ -49,4 +49,8 @@ se_stage_8_effects: "Recruit Avatar Ship"
 se_building_psionic_sanctum: "Psionic Sanctum"
 se_building_psionic_sanctum_desc: "This sanctum is a sacred beacon. While in the shroud, all of our Telepaths can find their way back to here."
 
+# Traits
+se_leader_trait_patron: "Shroud Patron"
+se_leader_trait_patron_desc: "This being is now tied to the Shroud, and through them so are we. As long as we existm they will, and as long as they do, so shell we."
+
 TEST: "REPLACE ME"

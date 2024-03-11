@@ -205,8 +205,24 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		random_owned_leader = {
+			limit = {
+				is_same_species = owner_species
+				NOT = {
+					OR = {
+						has_trait = leader_trait_chosen
+					}
+				}
+			}
+			save_event_target_as = se_ascended_leader
+		}
+	}
+
 	option = {
 		name = "se.2120.a"
-		set_country_flag = se_ascended
+		event_target:se_ascended_leader = {
+			add_trait = se_leader_trait_patron
+		}
 	}
 }

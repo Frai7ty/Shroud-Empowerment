@@ -105,5 +105,4 @@ se_situation_the_ascent = {
 			custom_tooltip = approach_se_regular_tt
 		}
 	}
-
 }
