@@ -128,6 +128,29 @@ tr_psionics_psionic_assimilation = {
 				days = 360
 				random = 720
 			}
+			if = {
+				limit = { is_hive_empire = yes }
+				restore_gestalt_councilor_effect = {
+					CLASS = official
+					COUNCIL_POS = councilor_gestalt_growth
+					DESC = councilor_gestalt_growth_desc
+				}
+				restore_gestalt_councilor_effect = {
+					CLASS = official
+					COUNCIL_POS = councilor_gestalt_regulatory
+					DESC = councilor_gestalt_regulatory_desc
+				}
+				restore_gestalt_councilor_effect = {
+					CLASS = scientist
+					COUNCIL_POS = councilor_gestalt_cognitive
+					DESC = councilor_gestalt_cognitive_desc
+				}
+				restore_gestalt_councilor_effect = {
+					CLASS = commander
+					COUNCIL_POS = councilor_gestalt_legion
+					DESC = councilor_gestalt_legion_desc
+				}
+			}
 		}
 	}
 	# Primary species gains the Psionic trait.
