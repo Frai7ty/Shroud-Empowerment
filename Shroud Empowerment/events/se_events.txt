@@ -226,13 +226,3 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
-	id = se.9999
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		trigger
-	}
-}
