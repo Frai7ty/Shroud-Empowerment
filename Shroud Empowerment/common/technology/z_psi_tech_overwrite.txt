@@ -10,10 +10,6 @@ tech_psionic_theory = {
 
 	gateway = psionics
 
-	potential = {
-
-	}
-
 	modifier = {
 		empire_size_pops_mult = -0.10
 	}
@@ -127,10 +123,6 @@ tech_telepathy = {
 	weight = @tier3weight3
 	is_reverse_engineerable = no
 
-	potential = {
-
-	}
-
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -202,10 +194,6 @@ tech_precognition_interface = {
 			title = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_TITLE"
 			desc = "TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_DESC"
 		}
-	}
-
-	potential = {
-
 	}
 
 	weight_modifier = {
@@ -281,10 +269,6 @@ tech_psi_jump_drive_1 = {
 			title = "TECH_UNLOCK_PSI_JUMPDRIVE_1_TITLE"
 			desc = "TECH_UNLOCK_PSI_JUMPDRIVE_1_DESC"
 		}
-	}
-
-	potential = {
-
 	}
 
 	weight_modifier = {
